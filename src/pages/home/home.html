@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      OpenTok Ionic
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div>
+    <button ion-button secondary (click)="startCall()">Call</button>
+    <button ion-button color="danger" (click)="endCall()">End</button>
+   <!-- <button ion-button secondary (click)="toggleCamera()">Toggle Camera</button> -->
+  </div>
+
+  <div id="videos">
+    <div id="subscriber"></div>
+    <div id="publisher"></div>
+  </div>
+</ion-content>
